@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>QR Mobile</title>
+    </head>
+    <body>
+        <div class="mainContainer">
+            <div class="subContainer">
+                <div class="left">
+                    <input
+                        class="inputNr"
+                        type="tel"
+                        placeholder="Your number here ..."
+                    />
+                    <button class="submitBtn" type="button">Generate QR</button>
+                    <button class="submitBtn clearBtn" type="button">
+                        Clear QR
+                    </button>
+                </div>
+                <div class="right">
+                    <div class="qrContainer" id="qrcode"></div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="./js/easy.qrcode.min.js"
+            type="text/javascript"
+            charset="utf-8"
+        ></script>
+
+        <script src="./index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subContainer {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 0 15px 5px #ccc;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+.inputNr {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+.submitBtn {
+    cursor: pointer;
+    border: none;
+    background-image: linear-gradient(
+        to right,
+        #e52d27 0%,
+        #b31217 51%,
+        #e52d27 100%
+    );
+    margin: 10px;
+    padding: 10px 45px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    transition: all 0.5s;
+    color: white;
+    font-size: 15px;
+}
+
+.submitBtn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.submitBtn:active {
+    transform: scale(0.94);
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.qrContainer {
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 5px 5px #ccc;
+}
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
